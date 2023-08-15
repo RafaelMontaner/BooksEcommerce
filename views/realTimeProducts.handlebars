@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Products</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Incluir la biblioteca Socket.IO -->
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <!-- Resto de tu contenido HTML -->
+    <ul id="product-list">
+        <!-- Products will be added here using WebSocket -->
+    </ul>
+    <form id="crearProductoForm">
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="number" id="precio" placeholder="Precio">
+        <button type="submit">Crear Producto</button>
+    </form>
+    <form id="eliminarProductoForm">
+        <input type="text" id="productoId" placeholder="ID del Producto a Eliminar">
+        <button type="submit">Eliminar Producto</button>
+    </form>
+    <!-- Cargar tu archivo main.js -->
+    <script src="/js/main.js"></script>
+</body>
+</html>
